@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------- FONT AWESOME ------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!------------------- CSS ------------------------->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Krishan's Portfolio Website</title>
+</head>
+<body>
+    <!------------------- STYLE SWITCHER ------------------------->
+    <input type="radio" name="color" id="color-1" />
+    <input type="radio" name="color" id="color-2" />
+    <input type="radio" name="color" id="color-3" />
+    <input type="radio" name="color" id="color-4" />
+    <input type="radio" name="color" id="color-5" />
+    <input type="radio" name="color" id="color-6" />
+    <input type="radio" name="color" id="color-7" />
+    <input type="radio" name="color" id="color-8" />
+    <input type="radio" name="color" id="color-9" />
+    <input type="radio" name="color" id="color-10" />
+    <input type="checkbox" id="toggler" />
+    <input type="checkbox" id="day-night" />
+
+    <div class="style__switcher">
+        <label for="toggler" class="style__switcher-toggler">
+            <i class="fa-solid fa-gear fa-spin"></i>
+        </label>
+
+        <label for="day-night" class="style__switcher-theme">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+        </label>
+
+        <h3 class="style__switcher-title">Theme Colors</h3>
+
+        <div class="style__switcher-colors">
+            <label for="color-1" class="color-1 color"></label>
+            <label for="color-2" class="color-2 color"></label>
+            <label for="color-3" class="color-3 color"></label>
+            <label for="color-4" class="color-4 color"></label>
+            <label for="color-5" class="color-5 color"></label>
+            <label for="color-6" class="color-6 color"></label>
+            <label for="color-7" class="color-7 color"></label>
+            <label for="color-8" class="color-8 color"></label>
+            <label for="color-9" class="color-9 color"></label>
+            <label for="color-10" class="color-10 color"></label>
+        </div>
+    </div>
+    
+    <!------------------- HEADER ------------------------->
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">Krishan Sharma</a>
+
+            <input type="checkbox"  id="nav-toggler">
+
+            <label for="nav-toggler" class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#qualification" class="nav__link">Qualification</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#works" class="nav__link">Portfolio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <!------------------- MAIN ------------------------->
+    <main class="main">
+
+    <!------------------- HOME ------------------------->
+    <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content">
+                <span class="home__small">Hello</span>
+                <h1 class="home__title"><span>I'm</span> Krishan Sharma <br> a <span>Web Developer</span></h1>
+
+                <p class="home__description">
+                    Hi, I'm Krishan Sharma, a Web Developer! I specialize in making websites look fantastic and easy to use. I'm like a digital artist, combining colors, shapes, and ideas to create online presence that grab attention and provide a great experience. Let's turn your web vision into reality! 🎨🌐
+                </p>
+
+                <div class="home__btns">
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
+                </div>
+            </div>
+
+            <div class="home__img-wrapper">
+                <img src="images/krish_pic.png" alt="" class="home__img">
+            </div>
+        </div>
+    </section>
+
+    <!------------------- ABOUT ------------------------->
+    <section class="about section" id="about">
+        <div class="about__container container grid">
+            <div class="about__img-wrapper">
+                <img src="images/about_pic.png" alt="" class="about__img">
+                <img src="images/about_pic.png" alt="" class="about__img">
+                <img src="images/about_pic.png" alt="" class="about__img">
+                <img src="images/about_pic.png" alt="" class="about__img">
+            </div>
+
+            <div class="about__content">
+               <h2 class="section__title" data-title="Who am I ?">
+                I'm Krishan Sharma, a visual UI/UX Designer and Web Developer
+               </h2> 
+
+               <p class="about__description">Hi! I'm Krishan Sharma, and I love making websites look cool and easy to use. I'm both a Visual UI/UX Designer and Web Developer, so I combine the best of design and functionality to create websites that people will enjoy using.</p>
+
+               <ul class="about__data grid">
+                <li class="data__item">
+                    <h3 class="data__title">Name:</h3>
+                    <span class="data__description">Krishan Sharma</span>
+                </li>
+
+                <li class="data__item">
+                    <h3 class="data__title">Age:</h3>
+                    <span class="data__description">20 Years</span>
+                </li>
+
+                <li class="data__item">
+                    <h3 class="data__title">From:</h3>
+                    <span class="data__description">Haryana,India</span>
+                </li>
+
+                <li class="data__item">
+                    <h3 class="data__title">Email:</h3>
+                    <span class="data__description about__link">krishanmoudgil07@gmail.com</span>
+                </li>
+               </ul>
+
+               <div class="about__bottom">
+                <a href="" class="btn">Download Resume</a>
+
+                <div class="about__social-links">
+                    <a href="https://twitter.com/MKrish026" class="about__social-link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/krishan-sharma-3444751b5/" class="about__social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/krishan026" class="about__social-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/krish__moudgil/" class="about__social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------- QUALIFICATION ------------------------->
+    <section class="qualification section" id="qualification">
+      <h2 class="section__title title-center" data-title="My Journey">Qualification</h2>
+
+      <div class="resume__container container grid">
+        <div class="resume__group">
+            <h3 class="resume__heading">Education</h3>
+
+            <div class="resume__items">
+                
+                <div class="resume__item">
+                    <div class="resume__header">
+                        <h3 class="resume__subtitle">College - Kurukshetra University</h3>
+                        <span class="resume__icon">+</span>
+                    </div>
+
+                    <div class="resume__content">
+                        <div class="resume__date-title">
+                           <h3 class="resume__title">B.tech CSE</h3> 
+                           <span class="resume__date">
+                            2020 - 2024
+                           </span>
+                        </div>
+
+                        <p class="resume__description">
+                            Over the past 4 years in B.Tech CSE, I've mastered coding languages, tackled real-world projects, and graduated with tech skills. Now I am ready for the next chapter! 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <div class="resume__header">
+                        <h3 class="resume__subtitle">Haryana Board of School Education</h3>
+                        <span class="resume__icon">-</span>
+                    </div>
+
+                    <div class="resume__content">
+                        <div class="resume__date-title">
+                           <h3 class="resume__title">Senior Secondary School</h3> 
+                           <span class="resume__date">
+                            2018 - 2020
+                           </span>
+                        </div>
+
+                        <p class="resume__description">
+                            It was a transformative journey where I study interesting subjects, made lifelong friends, and faced exciting academic challenges.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <div class="resume__header">
+                        <h3 class="resume__subtitle">Haryana Board of School Education</h3>
+                        <span class="resume__icon">+</span>
+                    </div>
+
+                    <div class="resume__content">
+                        <div class="resume__date-title">
+                           <h3 class="resume__title">High School</h3> 
+                           <span class="resume__date">
+                            2016 - 2018
+                           </span>
+                        </div>
+
+                        <p class="resume__description">
+                            High school was like trying out different subjects. It was the starting point for me to grow and figure out what I want to do in the future.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="resume__group">
+            <h3 class="resume__heading">Training</h3>
+
+            <div class="resume__items">
+
+                <div class="resume__item">
+                    <div class="resume__header">
+                        <h3 class="resume__subtitle">Udemy</h3>
+                        <span class="resume__icon">+</span>
+                    </div>
+
+                    <div class="resume__content">
+                        <div class="resume__date-title">
+                           <h3 class="resume__title">Web Development Bootcamp</h3> 
+                           <span class="resume__date">
+                            2020 - 2021
+                           </span>
+                        </div>
+
+                        <p class="resume__description">
+                            In this, I learned to make websites and apps. From basic coding to creating cool online stuff, it's been like a speedy adventure in turning ideas into digital reality! 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <div class="resume__header">
+                        <h3 class="resume__subtitle">OOPS Info Technology</h3>
+                        <span class="resume__icon">-</span>
+                    </div>
+
+                    <div class="resume__content">
+                        <div class="resume__date-title">
+                           <h3 class="resume__title">Python programming</h3> 
+                           <span class="resume__date">
+                            2021 - 2022
+                           </span>
+                        </div>
+
+                        <p class="resume__description">
+                            Python programming is like talking to computers using simple and clear instructions. It's a versatile language that helps in building websites, games, and solving problems.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="resume__item">
+                    <div class="resume__header">
+                        <h3 class="resume__subtitle">Apna College</h3>
+                        <span class="resume__icon">+</span>
+                    </div>
+
+                    <div class="resume__content">
+                        <div class="resume__date-title">
+                           <h3 class="resume__title">JAVA + DSA</h3> 
+                           <span class="resume__date">
+                            2022 - 2023
+                           </span>
+                        </div>
+
+                        <p class="resume__description">
+                            In this, I've learned to use Java for writing strong and reliable code. With DSA, I figured out smart ways to organize and process information.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!------------------- SKILLS ------------------------->
+    <section class="skills section" id="skills">
+        <h2 class="section__title title-center" data-title="MY TALENT">Professional Skills</h2>
+
+        <div class="skills__container container grid">
+
+            <div class="skills__item">
+                <div class="skills__titles">
+                    <h3 class="skills__name">Front - End</h3>
+                    <span class="skills__no">95 %</span>
+                </div>
+
+                <p class="skills__description">I make websites that look cool and work smoothly, by using HTML, CSS, and JavaScript etc.</p>
+
+                <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 95%">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__titles">
+                    <h3 class="skills__name">Back - End</h3>
+                    <span class="skills__no">75 %</span>
+                </div>
+
+                <p class="skills__description">I make websites that run smoothly in the background by using things like Node.js and databases.</p>
+
+                <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 75%">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__titles">
+                    <h3 class="skills__name">Version Control</h3>
+                    <span class="skills__no">95 %</span>
+                </div>
+
+                <p class="skills__description">I have Proficiency in using version control systems like Git,Github for code collaboration and management.</p>
+
+                <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 95%">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__titles">
+                    <h3 class="skills__name">API Development</h3>
+                    <span class="skills__no">75 %</span>
+                </div>
+
+                <p class="skills__description">I Build pathways for different computer programs to talk and share information smoothly.</p>
+
+                <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 75%">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__titles">
+                    <h3 class="skills__name">UI/UX Design</h3>
+                    <span class="skills__no">90 %</span>
+                </div>
+
+                <p class="skills__description">I Craft user-friendly and good-looking designs for a smooth and enjoyable digital experience.</p>
+
+                <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 90%">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__titles">
+                    <h3 class="skills__name">Security Handling</h3>
+                    <span class="skills__no">85 %</span>
+                </div>
+
+                <p class="skills__description">"I am skilled in keeping websites safe from bad stuff.I will ensure your online experience is secure and worry free"</p>
+
+                <div class="skills__bar">
+                    <div class="skills__percentage" style="width: 85%">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------- PORTFOLIO ------------------------->
+    <section class="works section" id="works">
+        <h2 class="section__title title-center" data-title="My Portfolio">Recent Works</h2>
+
+        <div class="work__container container grid">
+            <div class="work__card">
+                <img src="images/project_img1.png" alt="" class="work__img">
+
+                <div class="work__details">
+                    <h3 class="work__title">Spotify Clone</h3>
+                    <span class="work__description">This is a music platform for listening music</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="images/project_img2.png" alt="" class="work__img">
+
+                <div class="work__details">
+                    <h3 class="work__title">Dating App</h3>
+                    <span class="work__description">This is a app for single people</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="images/project_img3.png" alt="" class="work__img">
+
+                <div class="work__details">
+                    <h3 class="work__title">Flipkart Clone</h3>
+                    <span class="work__description">This is a platform for shopping</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="images/project_img4.png" alt="" class="work__img">
+
+                <div class="work__details">
+                    <h3 class="work__title">Linkedin Clone</h3>
+                    <span class="work__description">This is a platform for socially connect</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="images/project_img5.png" alt="" class="work__img">
+
+                <div class="work__details">
+                    <h3 class="work__title">Uber Clone</h3>
+                    <span class="work__description">This is a platform for cab booking</span>
+                </div>
+            </div>
+
+            <div class="work__card">
+                <img src="images/project_img6.png" alt="" class="work__img">
+
+                <div class="work__details">
+                    <h3 class="work__title">Zomato Clone</h3>
+                    <span class="work__description">This is a platform for ordering food</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------------- CONTACT ------------------------->
+    <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Get in touch">Contact Me</h2>
+
+        <div class="contact__container container grid">
+            <div class="contact__details">
+                <div class="contact__item">
+                    <i class="fa-solid fa-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">Call at</h3>
+                        <span class="contact__data">+91 9306893529</span>
+                    </div>
+                </div>
+
+                <div class="contact__item">
+                    <i class="fa-solid fa-envelope contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title">E-mail at</h3>
+                        <span class="contact__data">krishanmoudgil07@gmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="" class="contact__form">
+                <div class="form__group">
+                    <div class="form__input">
+                      <input type="text"  placeholder="Name"  class="input__control">
+                    </div>
+
+                    <div class="form__input">
+                        <input type="email"  placeholder="Email"  class="input__control">
+                      </div>
+                </div>
+
+                <div class="form__input">
+                    <input type="text"  placeholder="Subject"  class="input__control">
+                  </div>
+
+                  <div class="form__input">
+                    <textarea name=""
+                     id="" 
+                     placeholder="Message"
+                     cols="30"
+                     rows="10" 
+                     class="input__control textarea">
+                    </textarea>
+                  </div>
+
+                  <button class="btn contact__btn">Send Message</button>
+
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <!------------------- FOOTER ------------------------->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copyright">&copy; Made By Krishan Sharma</p>
+
+            <div class="footer__social-links">
+                <a href="https://twitter.com/MKrish026" class="footer__social-link">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/krishan-sharma-3444751b5/" class="footer__social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/krishan026" class="footer__social-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.instagram.com/krish__moudgil/" class="footer__social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
